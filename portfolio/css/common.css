@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+.clearFix:after, .floatList:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+.container {
+    width:1280px;
+    margin:0 auto;
+    position: relative;
+}
+.blind {
+    display: none;
+}
+
+.btns {
+    font-size: 0;
+}
+.btns.center {
+    text-align: center;
+}
+.btns.left {
+    text-align: left;
+}
+.btns.right {
+    text-align: right;
+}
+.btns .btn {
+    font-size: 16px;
+    display: inline-block;
+    width:240px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color:#333;
+    /* background-color: #f00; */
+    background: var(--main-color);
+    margin: 0 2px;
+    border-radius: 100px;
+}
+
+.btns .btn.white {
+    background-color: #fff;
+    color:#f00;
+}
+.btns .btn.noRadius {
+    border-radius: 0;
+}
+
+
+/* select */
+.selectBox {
+    position: relative;
+}
+.selectBox > a {
+    display: block;
+    width:240px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #292931;
+    text-align: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+.selectBox ul {
+    position: absolute;
+    display: none;
+}
+.selectBox ul li a {
+    display: block;
+    width:240px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #292931;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.selectBox:hover ul {
+    display: block;
+    border-top: 2px solid transparent;
+}
+
+.selectBox.up ul {
+    bottom: 45px;
+    margin-bottom: 2px;
+}
+
+.floatList > li {
+    float: left;
+}
+.inlineList {
+    font-size: 0;
+}
+.inlineList > li {
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}

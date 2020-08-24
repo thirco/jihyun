@@ -1,0 +1,57 @@
+@import "vars";
+
+#main {
+    height: 100vh;
+    overflow:hidden;
+    background-color: #000;
+    .inner {
+        height: 100vh;
+    }
+    #mainVisual {
+        background: url("../images/main/mainVisual.jpg")no-repeat 50%;
+        background-size: cover;
+        position: relative;
+    }
+    // mainVisual
+    #a {
+        .inner {
+            position: relative;
+            padding-top: 300px;
+        }
+    }
+    // a
+    #b {
+        color: #fff;
+        position: relative;
+        .inner {
+            background-color: #fff;
+        }
+        .container {
+            height: 100vh;
+        }
+    }
+    // b
+    #c {
+        .inner {
+        }
+        .container {
+            height: 100vh;
+        }
+    }
+    // c
+    #d {
+        .inner {
+            background-color: $main-color;
+            position: relative;
+            background-color: #21D4FD;
+            background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+            ;
+        }
+        .container { 
+            height: 100vh;
+            color: #fff;
+        }
+    }
+    // d
+}
+// main

@@ -1,0 +1,136 @@
+@function makelongshadow($color) {
+    $val: 0px 0px $color;
+    @for $i from 1 through 500 {
+      $val: #{$val}, #{$i}px #{$i}px #{$color};
+    }
+    @return $val;
+  }
+  
+  @mixin longshadow($color) {
+    text-shadow: makelongshadow($color);
+  }
+  
+//   $color: #E13E06;
+  
+
+body {
+    color: #333;
+    background-color: #000;
+}
+.container {
+    color: #fff;
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    border-bottom: 1px solid #000;
+    z-index: 999;
+    .btnAll {
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        position: absolute;
+        right: 0;
+        span {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.25s ease;
+            &:nth-child(1){
+                top: 39px;
+                left:auto;
+                right: 30px;
+                width: 15px;
+            }
+            &:nth-child(2){
+                top: 49px;
+            }
+            &:nth-child(3){
+                top: 59px;
+            }
+        }
+        &.on {
+            span {
+                &:nth-child(1){
+                    width:60px
+                }
+            }
+        }
+        &.btnAllClick {
+            &:nth-child(1){
+                top: 49px;
+                transform: rotate(-45deg);
+            }
+            &:nth-child(2){
+                left: -20px;
+                opacity: 0; 
+            }
+            &:nth-child(3){
+                top: 49px;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+#logo {
+    width: 65px;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    a {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+}
+.introduceBox {
+    text-align: center;
+    font-size: 6rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Yeon Sung", "cursive";
+    font-weight: 300;
+    color: #fff;
+    // text-shadow: 3px 3px 3px rgba(0,0,0,0.5);;
+    
+
+    span {
+        display: inline-block;
+    }
+    .iam {
+        @include longshadow(darken(#000, 20% ));
+
+    }
+    #typed {
+        margin-left: 30px;
+        font-weight: 700;
+        color: peru;
+        @include longshadow(darken(#000, 20% ));
+
+    }
+}
+
+#mainFooter {
+    background-color: #000;
+    height: 100vh;
+}

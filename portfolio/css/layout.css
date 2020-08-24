@@ -1,0 +1,134 @@
+body {
+  color: #333;
+  background-color: #000;
+}
+
+.container {
+  color: #fff;
+  text-align: center;
+  font-size: 100px;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  border-bottom: 1px solid #000;
+  z-index: 999;
+}
+
+#header .btnAll {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+#header .btnAll span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#header .btnAll span:nth-child(1) {
+  top: 39px;
+  left: auto;
+  right: 30px;
+  width: 15px;
+}
+
+#header .btnAll span:nth-child(2) {
+  top: 49px;
+}
+
+#header .btnAll span:nth-child(3) {
+  top: 59px;
+}
+
+#header .btnAll.on span:nth-child(1) {
+  width: 60px;
+}
+
+#header .btnAll.btnAllClick:nth-child(1) {
+  top: 49px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+#header .btnAll.btnAllClick:nth-child(2) {
+  left: -20px;
+  opacity: 0;
+}
+
+#header .btnAll.btnAllClick:nth-child(3) {
+  top: 49px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#logo {
+  width: 65px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+#logo a {
+  display: block;
+}
+
+#logo a img {
+  width: 100%;
+}
+
+.introduceBox {
+  text-align: center;
+  font-size: 6rem;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: "Yeon Sung", "cursive";
+  font-weight: 300;
+  color: #fff;
+}
+
+.introduceBox span {
+  display: inline-block;
+}
+
+.introduceBox .iam {
+  text-shadow: 0px 0px black, 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 9px 9px black, 10px 10px black, 11px 11px black, 12px 12px black, 13px 13px black, 14px 14px black, 15px 15px black, 16px 16px black, 17px 17px black, 18px 18px black, 19px 19px black, 20px 20px black, 21px 21px black, 22px 22px black, 23px 23px black, 24px 24px black, 25px 25px black, 26px 26px black, 27px 27px black, 28px 28px black, 29px 29px black, 30px 30px black, 31px 31px black, 32px 32px black, 33px 33px black, 34px 34px black, 35px 35px black, 36px 36px black, 37px 37px black, 38px 38px black, 39px 39px black, 40px 40px black, 41px 41px black, 42px 42px black, 43px 43px black, 44px 44px black, 45px 45px black, 46px 46px black, 47px 47px black, 48px 48px black, 49px 49px black, 50px 50px black, 51px 51px black, 52px 52px black, 53px 53px black, 54px 54px black, 55px 55px black, 56px 56px black, 57px 57px black, 58px 58px black, 59px 59px black, 60px 60px black, 61px 61px black, 62px 62px black, 63px 63px black, 64px 64px black, 65px 65px black, 66px 66px black, 67px 67px black, 68px 68px black, 69px 69px black, 70px 70px black, 71px 71px black, 72px 72px black, 73px 73px black, 74px 74px black, 75px 75px black, 76px 76px black, 77px 77px black, 78px 78px black, 79px 79px black, 80px 80px black, 81px 81px black, 82px 82px black, 83px 83px black, 84px 84px black, 85px 85px black, 86px 86px black, 87px 87px black, 88px 88px black, 89px 89px black, 90px 90px black, 91px 91px black, 92px 92px black, 93px 93px black, 94px 94px black, 95px 95px black, 96px 96px black, 97px 97px black, 98px 98px black, 99px 99px black, 100px 100px black, 101px 101px black, 102px 102px black, 103px 103px black, 104px 104px black, 105px 105px black, 106px 106px black, 107px 107px black, 108px 108px black, 109px 109px black, 110px 110px black, 111px 111px black, 112px 112px black, 113px 113px black, 114px 114px black, 115px 115px black, 116px 116px black, 117px 117px black, 118px 118px black, 119px 119px black, 120px 120px black, 121px 121px black, 122px 122px black, 123px 123px black, 124px 124px black, 125px 125px black, 126px 126px black, 127px 127px black, 128px 128px black, 129px 129px black, 130px 130px black, 131px 131px black, 132px 132px black, 133px 133px black, 134px 134px black, 135px 135px black, 136px 136px black, 137px 137px black, 138px 138px black, 139px 139px black, 140px 140px black, 141px 141px black, 142px 142px black, 143px 143px black, 144px 144px black, 145px 145px black, 146px 146px black, 147px 147px black, 148px 148px black, 149px 149px black, 150px 150px black, 151px 151px black, 152px 152px black, 153px 153px black, 154px 154px black, 155px 155px black, 156px 156px black, 157px 157px black, 158px 158px black, 159px 159px black, 160px 160px black, 161px 161px black, 162px 162px black, 163px 163px black, 164px 164px black, 165px 165px black, 166px 166px black, 167px 167px black, 168px 168px black, 169px 169px black, 170px 170px black, 171px 171px black, 172px 172px black, 173px 173px black, 174px 174px black, 175px 175px black, 176px 176px black, 177px 177px black, 178px 178px black, 179px 179px black, 180px 180px black, 181px 181px black, 182px 182px black, 183px 183px black, 184px 184px black, 185px 185px black, 186px 186px black, 187px 187px black, 188px 188px black, 189px 189px black, 190px 190px black, 191px 191px black, 192px 192px black, 193px 193px black, 194px 194px black, 195px 195px black, 196px 196px black, 197px 197px black, 198px 198px black, 199px 199px black, 200px 200px black, 201px 201px black, 202px 202px black, 203px 203px black, 204px 204px black, 205px 205px black, 206px 206px black, 207px 207px black, 208px 208px black, 209px 209px black, 210px 210px black, 211px 211px black, 212px 212px black, 213px 213px black, 214px 214px black, 215px 215px black, 216px 216px black, 217px 217px black, 218px 218px black, 219px 219px black, 220px 220px black, 221px 221px black, 222px 222px black, 223px 223px black, 224px 224px black, 225px 225px black, 226px 226px black, 227px 227px black, 228px 228px black, 229px 229px black, 230px 230px black, 231px 231px black, 232px 232px black, 233px 233px black, 234px 234px black, 235px 235px black, 236px 236px black, 237px 237px black, 238px 238px black, 239px 239px black, 240px 240px black, 241px 241px black, 242px 242px black, 243px 243px black, 244px 244px black, 245px 245px black, 246px 246px black, 247px 247px black, 248px 248px black, 249px 249px black, 250px 250px black, 251px 251px black, 252px 252px black, 253px 253px black, 254px 254px black, 255px 255px black, 256px 256px black, 257px 257px black, 258px 258px black, 259px 259px black, 260px 260px black, 261px 261px black, 262px 262px black, 263px 263px black, 264px 264px black, 265px 265px black, 266px 266px black, 267px 267px black, 268px 268px black, 269px 269px black, 270px 270px black, 271px 271px black, 272px 272px black, 273px 273px black, 274px 274px black, 275px 275px black, 276px 276px black, 277px 277px black, 278px 278px black, 279px 279px black, 280px 280px black, 281px 281px black, 282px 282px black, 283px 283px black, 284px 284px black, 285px 285px black, 286px 286px black, 287px 287px black, 288px 288px black, 289px 289px black, 290px 290px black, 291px 291px black, 292px 292px black, 293px 293px black, 294px 294px black, 295px 295px black, 296px 296px black, 297px 297px black, 298px 298px black, 299px 299px black, 300px 300px black, 301px 301px black, 302px 302px black, 303px 303px black, 304px 304px black, 305px 305px black, 306px 306px black, 307px 307px black, 308px 308px black, 309px 309px black, 310px 310px black, 311px 311px black, 312px 312px black, 313px 313px black, 314px 314px black, 315px 315px black, 316px 316px black, 317px 317px black, 318px 318px black, 319px 319px black, 320px 320px black, 321px 321px black, 322px 322px black, 323px 323px black, 324px 324px black, 325px 325px black, 326px 326px black, 327px 327px black, 328px 328px black, 329px 329px black, 330px 330px black, 331px 331px black, 332px 332px black, 333px 333px black, 334px 334px black, 335px 335px black, 336px 336px black, 337px 337px black, 338px 338px black, 339px 339px black, 340px 340px black, 341px 341px black, 342px 342px black, 343px 343px black, 344px 344px black, 345px 345px black, 346px 346px black, 347px 347px black, 348px 348px black, 349px 349px black, 350px 350px black, 351px 351px black, 352px 352px black, 353px 353px black, 354px 354px black, 355px 355px black, 356px 356px black, 357px 357px black, 358px 358px black, 359px 359px black, 360px 360px black, 361px 361px black, 362px 362px black, 363px 363px black, 364px 364px black, 365px 365px black, 366px 366px black, 367px 367px black, 368px 368px black, 369px 369px black, 370px 370px black, 371px 371px black, 372px 372px black, 373px 373px black, 374px 374px black, 375px 375px black, 376px 376px black, 377px 377px black, 378px 378px black, 379px 379px black, 380px 380px black, 381px 381px black, 382px 382px black, 383px 383px black, 384px 384px black, 385px 385px black, 386px 386px black, 387px 387px black, 388px 388px black, 389px 389px black, 390px 390px black, 391px 391px black, 392px 392px black, 393px 393px black, 394px 394px black, 395px 395px black, 396px 396px black, 397px 397px black, 398px 398px black, 399px 399px black, 400px 400px black, 401px 401px black, 402px 402px black, 403px 403px black, 404px 404px black, 405px 405px black, 406px 406px black, 407px 407px black, 408px 408px black, 409px 409px black, 410px 410px black, 411px 411px black, 412px 412px black, 413px 413px black, 414px 414px black, 415px 415px black, 416px 416px black, 417px 417px black, 418px 418px black, 419px 419px black, 420px 420px black, 421px 421px black, 422px 422px black, 423px 423px black, 424px 424px black, 425px 425px black, 426px 426px black, 427px 427px black, 428px 428px black, 429px 429px black, 430px 430px black, 431px 431px black, 432px 432px black, 433px 433px black, 434px 434px black, 435px 435px black, 436px 436px black, 437px 437px black, 438px 438px black, 439px 439px black, 440px 440px black, 441px 441px black, 442px 442px black, 443px 443px black, 444px 444px black, 445px 445px black, 446px 446px black, 447px 447px black, 448px 448px black, 449px 449px black, 450px 450px black, 451px 451px black, 452px 452px black, 453px 453px black, 454px 454px black, 455px 455px black, 456px 456px black, 457px 457px black, 458px 458px black, 459px 459px black, 460px 460px black, 461px 461px black, 462px 462px black, 463px 463px black, 464px 464px black, 465px 465px black, 466px 466px black, 467px 467px black, 468px 468px black, 469px 469px black, 470px 470px black, 471px 471px black, 472px 472px black, 473px 473px black, 474px 474px black, 475px 475px black, 476px 476px black, 477px 477px black, 478px 478px black, 479px 479px black, 480px 480px black, 481px 481px black, 482px 482px black, 483px 483px black, 484px 484px black, 485px 485px black, 486px 486px black, 487px 487px black, 488px 488px black, 489px 489px black, 490px 490px black, 491px 491px black, 492px 492px black, 493px 493px black, 494px 494px black, 495px 495px black, 496px 496px black, 497px 497px black, 498px 498px black, 499px 499px black, 500px 500px black;
+}
+
+.introduceBox #typed {
+  margin-left: 30px;
+  font-weight: 700;
+  color: peru;
+  text-shadow: 0px 0px black, 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 9px 9px black, 10px 10px black, 11px 11px black, 12px 12px black, 13px 13px black, 14px 14px black, 15px 15px black, 16px 16px black, 17px 17px black, 18px 18px black, 19px 19px black, 20px 20px black, 21px 21px black, 22px 22px black, 23px 23px black, 24px 24px black, 25px 25px black, 26px 26px black, 27px 27px black, 28px 28px black, 29px 29px black, 30px 30px black, 31px 31px black, 32px 32px black, 33px 33px black, 34px 34px black, 35px 35px black, 36px 36px black, 37px 37px black, 38px 38px black, 39px 39px black, 40px 40px black, 41px 41px black, 42px 42px black, 43px 43px black, 44px 44px black, 45px 45px black, 46px 46px black, 47px 47px black, 48px 48px black, 49px 49px black, 50px 50px black, 51px 51px black, 52px 52px black, 53px 53px black, 54px 54px black, 55px 55px black, 56px 56px black, 57px 57px black, 58px 58px black, 59px 59px black, 60px 60px black, 61px 61px black, 62px 62px black, 63px 63px black, 64px 64px black, 65px 65px black, 66px 66px black, 67px 67px black, 68px 68px black, 69px 69px black, 70px 70px black, 71px 71px black, 72px 72px black, 73px 73px black, 74px 74px black, 75px 75px black, 76px 76px black, 77px 77px black, 78px 78px black, 79px 79px black, 80px 80px black, 81px 81px black, 82px 82px black, 83px 83px black, 84px 84px black, 85px 85px black, 86px 86px black, 87px 87px black, 88px 88px black, 89px 89px black, 90px 90px black, 91px 91px black, 92px 92px black, 93px 93px black, 94px 94px black, 95px 95px black, 96px 96px black, 97px 97px black, 98px 98px black, 99px 99px black, 100px 100px black, 101px 101px black, 102px 102px black, 103px 103px black, 104px 104px black, 105px 105px black, 106px 106px black, 107px 107px black, 108px 108px black, 109px 109px black, 110px 110px black, 111px 111px black, 112px 112px black, 113px 113px black, 114px 114px black, 115px 115px black, 116px 116px black, 117px 117px black, 118px 118px black, 119px 119px black, 120px 120px black, 121px 121px black, 122px 122px black, 123px 123px black, 124px 124px black, 125px 125px black, 126px 126px black, 127px 127px black, 128px 128px black, 129px 129px black, 130px 130px black, 131px 131px black, 132px 132px black, 133px 133px black, 134px 134px black, 135px 135px black, 136px 136px black, 137px 137px black, 138px 138px black, 139px 139px black, 140px 140px black, 141px 141px black, 142px 142px black, 143px 143px black, 144px 144px black, 145px 145px black, 146px 146px black, 147px 147px black, 148px 148px black, 149px 149px black, 150px 150px black, 151px 151px black, 152px 152px black, 153px 153px black, 154px 154px black, 155px 155px black, 156px 156px black, 157px 157px black, 158px 158px black, 159px 159px black, 160px 160px black, 161px 161px black, 162px 162px black, 163px 163px black, 164px 164px black, 165px 165px black, 166px 166px black, 167px 167px black, 168px 168px black, 169px 169px black, 170px 170px black, 171px 171px black, 172px 172px black, 173px 173px black, 174px 174px black, 175px 175px black, 176px 176px black, 177px 177px black, 178px 178px black, 179px 179px black, 180px 180px black, 181px 181px black, 182px 182px black, 183px 183px black, 184px 184px black, 185px 185px black, 186px 186px black, 187px 187px black, 188px 188px black, 189px 189px black, 190px 190px black, 191px 191px black, 192px 192px black, 193px 193px black, 194px 194px black, 195px 195px black, 196px 196px black, 197px 197px black, 198px 198px black, 199px 199px black, 200px 200px black, 201px 201px black, 202px 202px black, 203px 203px black, 204px 204px black, 205px 205px black, 206px 206px black, 207px 207px black, 208px 208px black, 209px 209px black, 210px 210px black, 211px 211px black, 212px 212px black, 213px 213px black, 214px 214px black, 215px 215px black, 216px 216px black, 217px 217px black, 218px 218px black, 219px 219px black, 220px 220px black, 221px 221px black, 222px 222px black, 223px 223px black, 224px 224px black, 225px 225px black, 226px 226px black, 227px 227px black, 228px 228px black, 229px 229px black, 230px 230px black, 231px 231px black, 232px 232px black, 233px 233px black, 234px 234px black, 235px 235px black, 236px 236px black, 237px 237px black, 238px 238px black, 239px 239px black, 240px 240px black, 241px 241px black, 242px 242px black, 243px 243px black, 244px 244px black, 245px 245px black, 246px 246px black, 247px 247px black, 248px 248px black, 249px 249px black, 250px 250px black, 251px 251px black, 252px 252px black, 253px 253px black, 254px 254px black, 255px 255px black, 256px 256px black, 257px 257px black, 258px 258px black, 259px 259px black, 260px 260px black, 261px 261px black, 262px 262px black, 263px 263px black, 264px 264px black, 265px 265px black, 266px 266px black, 267px 267px black, 268px 268px black, 269px 269px black, 270px 270px black, 271px 271px black, 272px 272px black, 273px 273px black, 274px 274px black, 275px 275px black, 276px 276px black, 277px 277px black, 278px 278px black, 279px 279px black, 280px 280px black, 281px 281px black, 282px 282px black, 283px 283px black, 284px 284px black, 285px 285px black, 286px 286px black, 287px 287px black, 288px 288px black, 289px 289px black, 290px 290px black, 291px 291px black, 292px 292px black, 293px 293px black, 294px 294px black, 295px 295px black, 296px 296px black, 297px 297px black, 298px 298px black, 299px 299px black, 300px 300px black, 301px 301px black, 302px 302px black, 303px 303px black, 304px 304px black, 305px 305px black, 306px 306px black, 307px 307px black, 308px 308px black, 309px 309px black, 310px 310px black, 311px 311px black, 312px 312px black, 313px 313px black, 314px 314px black, 315px 315px black, 316px 316px black, 317px 317px black, 318px 318px black, 319px 319px black, 320px 320px black, 321px 321px black, 322px 322px black, 323px 323px black, 324px 324px black, 325px 325px black, 326px 326px black, 327px 327px black, 328px 328px black, 329px 329px black, 330px 330px black, 331px 331px black, 332px 332px black, 333px 333px black, 334px 334px black, 335px 335px black, 336px 336px black, 337px 337px black, 338px 338px black, 339px 339px black, 340px 340px black, 341px 341px black, 342px 342px black, 343px 343px black, 344px 344px black, 345px 345px black, 346px 346px black, 347px 347px black, 348px 348px black, 349px 349px black, 350px 350px black, 351px 351px black, 352px 352px black, 353px 353px black, 354px 354px black, 355px 355px black, 356px 356px black, 357px 357px black, 358px 358px black, 359px 359px black, 360px 360px black, 361px 361px black, 362px 362px black, 363px 363px black, 364px 364px black, 365px 365px black, 366px 366px black, 367px 367px black, 368px 368px black, 369px 369px black, 370px 370px black, 371px 371px black, 372px 372px black, 373px 373px black, 374px 374px black, 375px 375px black, 376px 376px black, 377px 377px black, 378px 378px black, 379px 379px black, 380px 380px black, 381px 381px black, 382px 382px black, 383px 383px black, 384px 384px black, 385px 385px black, 386px 386px black, 387px 387px black, 388px 388px black, 389px 389px black, 390px 390px black, 391px 391px black, 392px 392px black, 393px 393px black, 394px 394px black, 395px 395px black, 396px 396px black, 397px 397px black, 398px 398px black, 399px 399px black, 400px 400px black, 401px 401px black, 402px 402px black, 403px 403px black, 404px 404px black, 405px 405px black, 406px 406px black, 407px 407px black, 408px 408px black, 409px 409px black, 410px 410px black, 411px 411px black, 412px 412px black, 413px 413px black, 414px 414px black, 415px 415px black, 416px 416px black, 417px 417px black, 418px 418px black, 419px 419px black, 420px 420px black, 421px 421px black, 422px 422px black, 423px 423px black, 424px 424px black, 425px 425px black, 426px 426px black, 427px 427px black, 428px 428px black, 429px 429px black, 430px 430px black, 431px 431px black, 432px 432px black, 433px 433px black, 434px 434px black, 435px 435px black, 436px 436px black, 437px 437px black, 438px 438px black, 439px 439px black, 440px 440px black, 441px 441px black, 442px 442px black, 443px 443px black, 444px 444px black, 445px 445px black, 446px 446px black, 447px 447px black, 448px 448px black, 449px 449px black, 450px 450px black, 451px 451px black, 452px 452px black, 453px 453px black, 454px 454px black, 455px 455px black, 456px 456px black, 457px 457px black, 458px 458px black, 459px 459px black, 460px 460px black, 461px 461px black, 462px 462px black, 463px 463px black, 464px 464px black, 465px 465px black, 466px 466px black, 467px 467px black, 468px 468px black, 469px 469px black, 470px 470px black, 471px 471px black, 472px 472px black, 473px 473px black, 474px 474px black, 475px 475px black, 476px 476px black, 477px 477px black, 478px 478px black, 479px 479px black, 480px 480px black, 481px 481px black, 482px 482px black, 483px 483px black, 484px 484px black, 485px 485px black, 486px 486px black, 487px 487px black, 488px 488px black, 489px 489px black, 490px 490px black, 491px 491px black, 492px 492px black, 493px 493px black, 494px 494px black, 495px 495px black, 496px 496px black, 497px 497px black, 498px 498px black, 499px 499px black, 500px 500px black;
+}
+
+#mainFooter {
+  background-color: #000;
+  height: 100vh;
+}
