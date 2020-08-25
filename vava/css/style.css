@@ -1,0 +1,243 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.blind {
+  display: none;
+}
+
+.clearFix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrap {
+  width: 1700px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif, "Nanum Gothic", "나눔 고딕", AppleGothic, Dotum, "Apple SD Gothic Neo", 돋움, sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 111px;
+  position: fixed;
+  z-index: 999;
+  font-family: "Oswald";
+}
+
+#header.scroll {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#logo a img {
+  width: 100%;
+}
+
+#gnb ul {
+  text-align: center;
+}
+
+#gnb ul li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+#gnb ul li .depth01 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  padding: 60px 0 34px;
+}
+
+#gnb ul li .depth01:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+#gnb ul li:hover .depth01:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.utilMenu {
+  position: absolute;
+  right: 50px;
+  top: 26px;
+}
+
+.utilMenu .list li {
+  display: inline-block;
+}
+
+.utilMenu .list li a {
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.utilMenu .list li a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.utilMenu .list li:hover a:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+/* header end */
+#mainVisual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#mainVisual .list li {
+  position: relative;
+}
+
+#mainVisual .list li img {
+  width: 100%;
+}
+
+#mainVisual .list li .black {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#mainVisual .list li .txtBox {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+#mainVisual .list li .txtBox p {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 300;
+  font-family: "Oswald";
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+#mainVisual .list li .txtBox p strong {
+  display: block;
+  font-size: 6.8rem;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+#mainVisual .more {
+  display: block;
+  width: 130px;
+  padding: 12px 27px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 4;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+#mainVisual .more:hover {
+  -webkit-box-shadow: 0 0 20px #fff;
+          box-shadow: 0 0 20px #fff;
+}
+
+#mainVisual .snow {
+  background-image: url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png"), url("../images/face.png");
+  background-size: 40px 40px, 20px 20px, 30px 30px,40px 40px, 20px 20px, 30px 30px;
+  background-position: 10% 10%, 20% 0%, 45% -10%, 60% 15%, 85% -30%, 95% 10%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  -webkit-animation: snow 10s linear infinite;
+          animation: snow 10s linear infinite;
+}
+
+@-webkit-keyframes snow {
+  0% {
+    background-position: 0% 0%, 30% -50%, 35% 0%, 70% -20%, 80% 0%, 90% -50%;
+  }
+  50% {
+    background-position: 10% 50%, 20% 40%, 45% 50%, 60% 45%, 85% 50%, 95% 40%;
+  }
+  100% {
+    background-position: 0% 100%, 30% 70%, 35% 100%, 70% 90%, 80% 60%, 90% 80%;
+  }
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0% 0%, 30% -50%, 35% 0%, 70% -20%, 80% 0%, 90% -50%;
+  }
+  50% {
+    background-position: 10% 50%, 20% 40%, 45% 50%, 60% 45%, 85% 50%, 95% 40%;
+  }
+  100% {
+    background-position: 0% 100%, 30% 70%, 35% 100%, 70% 90%, 80% 60%, 90% 80%;
+  }
+}
