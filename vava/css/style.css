@@ -28,7 +28,7 @@ img {
 }
 
 .wrap {
-  width: 1700px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 #header.scroll {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #logo {
@@ -132,7 +132,6 @@ body {
           transform: scale(1);
 }
 
-/* header end */
 #mainVisual {
   position: relative;
   width: 100%;
@@ -218,6 +217,289 @@ body {
           animation: snow 10s linear infinite;
 }
 
+.title {
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #191919;
+  padding-top: 7%;
+  margin-bottom: 2%;
+  font-family: "Oswald";
+}
+
+#new {
+  position: relative;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+#new .list li {
+  float: left;
+  width: 31.33%;
+  margin-left: 3%;
+}
+
+#new .list li:nth-child(1) {
+  margin-left: 0;
+  position: relative;
+}
+
+#new .list li:nth-child(1) .spin {
+  position: absolute;
+  left: 5%;
+  top: -6%;
+  z-index: 2;
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+
+#new .list li .imgBox {
+  overflow: hidden;
+  position: relative;
+}
+
+#new .list li .imgBox img {
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+#new .list li .imgBox img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#new .list li .imgBox img:after {
+  content: '';
+  display: block;
+  padding-top: 70%;
+}
+
+#new .list li .txtBox {
+  font-family: "Oswald";
+  margin: 15px auto 0;
+}
+
+#new .list li .txtBox h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+#new .list li .txtBox p {
+  word-break: keep-all;
+  padding: 15px 0 23px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #727272;
+}
+
+#new .list li .txtBox span {
+  display: block;
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+#new .list li .txtBox span.originPrice {
+  color: #727272;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+#new .list li .txtBox .btnCart {
+  margin-top: 20px;
+  outline: none;
+  background-color: #fff;
+  padding: 13px 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: 2px solid #000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#new .list li .txtBox .btnCart.hover {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+#banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner .half {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: url("../images/banner01.png") no-repeat 50%;
+  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+overflow
+#banner .half:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#banner .half:before {
+  content: '';
+  display: block;
+  padding-top: 70%;
+}
+
+#banner .half .txtBox {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: #fff;
+  font-size: 4.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+
+#banner .half .txtBox p {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+#banner .quarterList {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#banner .quarterList li {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner .quarterList li:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+#banner .quarterList li:hover a:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#banner .quarterList li:nth-child(1) {
+  background-image: url("../images/banner02.jpg");
+}
+
+#banner .quarterList li:nth-child(2) {
+  background-image: url("../images/banner03.png");
+}
+
+#banner .quarterList li:nth-child(3) {
+  background-image: url("../images/banner04.png");
+}
+
+#banner .quarterList li:nth-child(4) {
+  background-image: url("../images/banner05.png");
+}
+
+#banner .quarterList li a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 700;
+  font-family: "Oswald";
+}
+
+#banner .quarterList li a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+#best {
+  width: 100%;
+}
+
+#best .fixBanner {
+  float: left;
+  width: 30%;
+}
+
+#best .fixBanner img {
+  width: 100%;
+}
+
+#best .contents {
+  float: left;
+  width: 60%;
+  margin: 0 5%;
+  height: 100%;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#best .contents li {
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+}
+
+#best .contents li:nth-child(2n) {
+  margin-right: 0;
+  margin-left: 2%;
+}
+
+#best .contents li img {
+  width: 100%;
+}
+
+#best .contents li .item {
+  margin: 30px 0;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+#best .contents li .item img {
+  float: left;
+  width: 20%;
+  margin-bottom: 50px;
+}
+
+#best .contents li .item .txtBox {
+  float: left;
+}
+
 @-webkit-keyframes snow {
   0% {
     background-position: 0% 0%, 30% -50%, 35% 0%, 70% -20%, 80% 0%, 90% -50%;
@@ -239,5 +521,27 @@ body {
   }
   100% {
     background-position: 0% 100%, 30% 70%, 35% 100%, 70% 90%, 80% 60%, 90% 80%;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
